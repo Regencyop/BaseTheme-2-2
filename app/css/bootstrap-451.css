@@ -3472,15 +3472,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   display: block;
 }
-.nav > li > a {
-  position: relative;
-  display: block;
-  padding: 20px 15px;
-}
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
 }
 .nav > li.disabled > a {
   color: #999999;
@@ -3811,11 +3805,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav {
   margin: 10px -5px;
 }
-.navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 20px;
-}
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu,
   .navbar-nav .open .dropdown-mega .dropdown-menu {
@@ -3851,10 +3840,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-nav > li {
     float: left;
-  }
-  .navbar-nav > li > a {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -5px;
@@ -3990,17 +3975,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a {
   color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #ffffff;
-  background-color: transparent;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #ffffff;
-  background-color: #359fd5;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4419,44 +4393,6 @@ a.list-group-item.active > .badge,
 }
 .nav-pills > li > a > .badge {
   margin-left: 3px;
-}
-.jumbotron {
-  padding: 15px;
-  margin-bottom: 15px;
-  color: inherit;
-  background-color: #ffffff;
-}
-.jumbotron h1,
-.jumbotron .h1 {
-  color: inherit;
-}
-.jumbotron p {
-  margin-bottom: 7.5px;
-  font-size: 21px;
-  font-weight: 200;
-}
-.container .jumbotron,
-.container-view .jumbotron {
-  border-radius: 6px;
-}
-.jumbotron .container,
-.jumbotron .container-view {
-  max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .jumbotron {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-  .container .jumbotron,
-  .container-view .jumbotron {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .jumbotron h1,
-  .jumbotron .h1 {
-    font-size: 63px;
-  }
 }
 .thumbnail {
   display: block;
@@ -6296,9 +6232,6 @@ button::-moz-focus-inner {
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
   }
-  .jumbotron {
-    text-align: center;
-  }
   .breadcrumb li {
     display: block;
   }
@@ -6307,9 +6240,6 @@ button::-moz-focus-inner {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .jumbotron {
-    text-align: center;
-  }
   input[datepicker-popup] {
     visibility: hidden;
     position: relative;
@@ -6486,9 +6416,6 @@ button::-moz-focus-inner {
   -o-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
 }
-.navbar-nav > li > a {
-  height: 60px;
-}
 .panel .tabbable .panel-heading {
   background-color: #f5f5f5;
 }
@@ -6506,24 +6433,6 @@ button::-moz-focus-inner {
 }
 .pagination li a {
   float: none;
-}
-.jumbotron {
-  margin: 45px 5px -45px;
-  display: none;
-}
-.jumbotron.active {
-  display: block;
-}
-.jumbotron h2 {
-  margin: 0;
-}
-.jumbotron h2 img {
-  max-height: 75px;
-  max-width: auto;
-}
-.jumbotron h2 span {
-  display: block;
-  clear: left;
 }
 @media (max-width: 992px) {
   .alert-info {
@@ -6566,11 +6475,6 @@ button::-moz-focus-inner {
 }
 .thumbnail {
   margin-bottom: 0;
-}
-.thumbnail img {
-  max-height: 75px;
-  max-width: 100%;
-  margin: 0 auto 15px;
 }
 .well {
   border-radius: 0;
