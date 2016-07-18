@@ -1,0 +1,445 @@
+    /* --------------Main Site Colors-------------- */
+
+
+    /* it is recommended to use either background with a URL
+       or to use background color exclusively of one another.
+       You can comment out everything from background: url to
+       background-size: cover; and then remove the comments 
+       surrounding color and background-color below those lines */
+    
+    .background {
+        background: none !important;
+    }
+
+    
+    body{
+        background: url('https://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/backgroundImage/Sunrise.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+    }
+    
+    
+    .companyImageBackground {
+        background-color: transparent !important;
+        margin: 0 auto;
+    }
+    
+    .container-view {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    
+    #content {
+        box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.8);
+    }
+    
+    /* --------------Category Icon Colors-------------- */
+    
+    /* this controls the backgrounds of the category icon container */
+    
+    .panel-default {
+        background-color: transparent !important;
+    }
+    
+    .panel-category-list {
+        background-color: transparent !important;
+    }
+    
+    /*to hide category Names, display: none; */
+    
+    .panel-category-list ul li .well h5 {
+        /* display: none !important; */
+    }
+    
+    /* This controls the category and product names */
+    
+    .navColors {
+        color: #00315a !important;
+        
+    }
+    
+    /* --------------navbar Colors-------------- */
+    
+    /* Main Navbar Background - the right side - 
+       you can add this class to the PDT to match 
+       the right side of the navbar
+       --This also controls the background-color 
+       of the headers on !2.0_BaseTheme2and3_MainTemplate1*/
+    
+    .navColorControl {
+        background: #0074c8; /* For browsers that do not support gradients */
+        height: 50px;
+        color: #fff;
+        font-size: 1.25em;
+    }
+    
+    /* Links on left side */
+    .colorControl {
+        color: white !important;
+        background-color: transparent !important;
+    }
+    
+    .colorControl:hover {
+        color: white !important;
+        background-color: #00315a !important;
+    }
+    
+    /* Category Dropdown Menu */
+    
+    /* The dropdown menu background color should match
+       the color of the left side links background color
+       when it is not in a hover state */
+       
+    .dropdown-menu {
+        color: white !important;
+        background-color: #00315a !important;
+    }
+    
+    .dropdownColor a {
+        color: white !important;
+        background-color: #00315a !important;
+    }
+    
+    .dropdownColor a:hover {
+        color: white !important;
+        background-color: #00315a !important;
+        font-size: 105% !important;
+        text-decoration: none !important;
+    }
+    
+    /* backArrow on Left -- this appears after "page 1" */
+    
+    .backArrow {
+        color: white !important;
+    }
+    
+    .backArrow:hover {
+        color: #0a0b35 !important;
+    }
+    
+    /* Shopping Cart Badges on Right */
+    
+    /* more than likely, there is not a need to adjust these buttons,
+       but this also can adjust the size of each */
+    
+    .cartPulledRightBackground {
+        background-color: none !important;
+    }
+    
+    .cartCountControl{
+        background-color: #00315a !important;
+        color: white !important;
+    }
+    
+    .cartCountControl:hover {
+        background-color: #0a0b35 !important;
+        color: white !important;
+    }
+    
+    .shoppingCartBadge {
+        background-color: none !important;
+        border: none !important;
+        color: #00315a !important;
+        padding: 5px;
+    }
+    
+    .shoppingCartBadge:hover {
+        background-color: none !important;
+        color: black !important;
+    }
+    
+    /* --------------Checkout Colors-------------- */
+    
+    /* ----buttons---- */
+    
+    /* this controls the cart button colors and their hover states */
+    
+    .checkoutButtonContainer {
+        margin-bottom: 15px !important;
+    }
+    
+    .cancelColor {
+        background-color: #00315a !important;
+        color: white !important;
+        padding: 15px 50px;
+        border-radius: 15px;
+    }
+    
+    .cancelColor:hover {
+        background-color: #505050 !important;
+    }
+    
+    .saveColor {
+        background-color: #00315a !important;  
+        color: white !important;
+        padding: 15px 50px;
+        border-radius: 15px;
+    }
+    
+    .saveColor:hover { 
+        background-color: #505050 !important;
+    }
+    
+    .submitColor {
+        background-color: #505050 !important;
+        padding: 15px 120px;
+        border-radius: 15px;
+    }
+    
+    .submitColor:hover {
+        background-color: #00315a !important;
+    }
+    
+    /* right side of line item */
+    
+    .deleteItem {
+        background-color: #0074c8 !important;
+        border: none !important;
+    }
+    
+    .deleteItem:hover {
+        background-color: #0e4678 !important;
+        border: none !important;
+    }
+    
+    
+    /* --------------Quick Edits-------------- */
+    
+    /* this is intended to be a place for quick edits any updates with animate.css
+       or any site specific updates that need to be made, can occur here.
+       However, it was designed for more involved updates to occur on the theme.
+       Theme updates should signify a custom site */
+    
+    /* Dropdown Width - if there is a long category name
+       you will need to make this width larger*/
+    
+    .navbar .container .navbar-nav.pull-left li ul li,
+    .navbar .container-view .navbar-nav.pull-left li ul li {
+        width: 200px;
+    }
+    
+    /* Company Image */
+    
+    .jumbotron h2 img {
+	    max-height: 100px;
+    	background-color: transparent;
+    	margin: 0px 25px 0 0px;
+    }
+    
+    /* 
+    If float left use margin: 0 0 0 25px;
+    If float: none; use margin: 0 auto;
+    If float; right; use margin: 0 25px 0 0;
+    */
+    
+    .jumbotron .container h2.thumbnail {
+        float: left;
+        /*float: right;*/
+        /*float: none;*/
+    }
+    
+    .h3Target h3 {
+        font-size: 19px;
+    } 
+    
+    .empty {
+        padding: 10.5px;
+    }
+    
+    /* This controls the height of the logo container. Adjust this, to adjust the height
+       of the space surrounding the main logo. */
+	
+	.jumbotron .container {
+		height: 125px;  /* custom message no */
+		/* height: 360px;  custom message yes | ensure height matches margin-top on .navbar-fixed-top above */
+		padding: 0 0px;
+		overflow: hidden;
+	}
+	
+	/* This controls the height of the margin above the navbar. */
+
+    .navbar-fixed-top {
+		position: static;
+		margin-top: 125px /*  custom message no */
+		/* margin-top: 345px;  custom message yes | ensure margin matches height on .jumbotron .container below */
+	}
+
+    
+    /* pageLoadControl is used to delay the load of the page 
+       in order to mask the page flicker caused by the base app */
+       
+    /* To adjust the amount of load time, change animation-delay
+       The animation-duration controls the lenght of time it takes 
+       once the animation begins */
+    
+    .pageLoadControl {
+        -webkit-animation-duration: 0s;
+        -webkit-animation-delay: 0s;
+        -ms-animation-duration: 0s;
+        -ms-animation-delay: 0s;
+        -o-animation-duration: 0s;
+        -o-animation-delay: 0s;        
+        -moz-animation-duration: 0s;
+        -moz-animation-delay: 0s;          
+    } 
+    
+    .colorHighlight {
+        padding: 25px 0 0 0;
+        color: #b3d4fc;
+    } 
+    
+    .footerContainer .colorHighlight {
+        color: #b3d4fc;
+    } 
+    
+    .navAndBrandingContainer {
+        width: 100%;
+        background-color:#0074c8;
+    }
+    
+    #content {
+        max-width: 85%;
+        margin: 0px auto 0px;
+    }
+    
+    .footerContainer {
+        width: 100%;
+        z-index: -1;
+        background-color: rgba(0,49,91,0.75);
+        color: #fff;
+        font-size: 1.5em;
+        line-height: 1.75em;
+        text-align: center;
+        padding: 30px 30px 100px 30px;
+    }
+    
+    .officeSuppliesContainer {
+        width: 100%;
+        text-align: center;
+        height: 0px;
+    }
+    
+    a.officeSupplies {
+        position: relative;
+        font-size: 1.15em;
+        text-decoration: none;
+        bottom: 85px;
+        padding: 7px 75px;
+        background-color: rgba(235,235,235,0.0);
+        color: rgba(255,255,255,1.0);
+        border-radius: 5px;
+        border: 3px solid rgba(255,255,255,0.35);
+
+    }
+    
+    a.officeSupplies:hover {
+        position: relative;
+        font-size: 1.15em;
+        background-color: rgba(235,235,235,0.3);
+        color: rgba(41,66,99,1.0);
+        border-radius: 5px;
+        border: 3px solid rgba(255,255,255,0.45);
+    }
+    
+    .specform-default .imagePreviewTwoColumn {
+        margin: 0 0 20px 0;
+        max-width: 100%;
+        margin-top: 19px;
+        border-right: 1px solid #bbb;
+    }
+    .specform-default .imagePreviewTwoColumn img {
+        max-width: 100%;
+    }
+    
+    .specform-default .specformRight {
+        padding-left: 33px;
+        padding-bottom: 30px;
+    }
+    
+    .partialsNavControl .cart a {
+    	position: relative;
+    	float: right;
+    	margin: -104px 15px 0 0;
+    	font-size: 1.25em;
+    	z-index: 999999999;
+    }
+    
+    .cartHeading {
+        font-size: 2em;
+        text-align: center;
+        margin: 5px;
+        padding:20px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        background: rgba(113,113,121,1); /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(rgba(113,113,121,1), rgba(175,175,180,1), rgba(113,113,121,1)) !important; /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgba(113,113,121,1), rgba(175,175,180,1), rgba(113,113,121,1)) !important; /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgba(113,113,121,1), rgba(175,175,180,1), rgba(113,113,121,1)) !important; /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgba(113,113,121,1), rgba(175,175,180,1), rgba(113,113,121,1)) !important; /* Standard syntax */
+        color: #fff;
+    }
+    
+    .form-group .view-form-icon .quantity div select {
+        width: 35%;
+    }
+    
+    .printOrder {
+    	color: #bbb !important;
+    }
+    
+    .printOrder:hover {
+        color: #777 !important;
+    }
+
+    
+    .highlight {
+        clear: both;
+    }
+    
+    .fa-edit {
+        display: none;
+    }
+
+/*	.container, .container-view, .jumbotron .container, .jumbotron .container-view, .navbar-fixed-bottom, .navbar-fixed-top {
+		max-width: 1210px; 
+		margin: 0 auto;
+	}
+	.header {
+		max-width: 1210px;
+		margin: 0px auto 0;
+		padding: 25px 0px 0;
+		background-color: rgba(255, 255, 255, 1);
+	} */
+	
+	.backtotop {
+	    color: #999;
+	}
+	
+	.variantList {
+	    margin-bottom: 50px;
+	}
+	
+	.text-info {
+	    color: #504e4a !important;
+	}
+	
+	.text-info:hover {
+	    color: #d4a527 !important;
+	}
+	
+	.cartHeader .nav ul li .cartTitle {
+	    font-size: 2.5em;
+	    position: relative;
+	    left: 20px;
+	    top: 10px;
+	}
+    
+	.cf {
+	    clear: both;
+	}
+
+	
+	
+	
