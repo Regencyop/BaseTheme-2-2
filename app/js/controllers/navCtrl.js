@@ -11,6 +11,25 @@ function ($location, $route, $scope, $451, User) {
 	$scope.refreshUser = function() {
 		store.clear();
 	}
+    var navClass;
+    console.log(window.onscroll);
+    window.onscroll = function() {
+        x = document.body.scrollTop;
+        scrollWatcher(x);
+    };
+    scrollWatcher(0);
+    
+    function scrollWatcher(scrollDelta) {
+        
+        if (scrollDelta > 50) {
+            navClass = "minimized";
+        } else {
+        	navClass = "maximize";
+        }
+        setTimeout(function (){
+            document.getElementById("jumbotronContainer").className = navClass;
+        }, 200);
+    }
 
     // http://stackoverflow.com/questions/12592472/how-to-highlight-a-current-menu-item-in-angularjs
     $scope.isActive = function(path) {
