@@ -1,7 +1,6 @@
 angular.module('OrderCloud-BackToTop', []);
 angular.module('OrderCloud-BackToTop')
-    .directive('backtotop', backtotop)
-;
+    .directive('backtotop', backtotop);
 
 function backtotop() {
     return {
