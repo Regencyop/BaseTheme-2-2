@@ -1,10 +1,29 @@
-<section class="jumbotron" ng-class="{'active': isActive('catalog')}" ng-show="user.Company.LogoUrl">
-    <div class="container">
-        <h2 class="thumbnail companyImageBackground" ng-show="Four51User.isAuthenticated()">
-            <a ng-click="refreshUser()" href="catalog">
-                <img ng-src="{{user.Company.LogoUrl}}" />
-            </a>
-            <homemessage />
-        </h2>
-    </div>
+<section id="jumbotronContainer" class="maximize" ng-class="{'active': isActive('catalog')}" ng-show="user.Company.LogoUrl">
+    <span ng-show="Four51User.isAuthenticated()">
+        <a ng-click="refreshUser()" href="catalog">
+            <img id="companyImage" src="https://www.four51.com/Themes/Custom/df7e2b71-6326-4da6-a24f-554d7d910faf/companyId/652629/652629-logo.png"/>
+        </a>
+        <ul class="nav navbar-nav pull-right">
+            <li class="back animated fadeInLeft colorControl" ng-class="{'ng-hide': isActive('catalog')}">
+                <a href back-step class="back colorControl">
+                    <i class="fa fa-arrow-left backArrow"></i>
+                </a>
+            </li>
+            <li class="products colorControl" ng-class="{'active': isInPath('catalog') || isInPath('product') || isInPath('cart/default') || isInPath('search')}">
+                <a id="451qa_home_link" class="colorControl" ng-show="Four51User.isAuthenticated()" href="catalog">
+                    <i class="fa fa-home"></i>
+                    <span class="hidden-xs">{{'Products' | rc | xlat}}</span>
+                </a>
+            </li>
+            <li class="colorControl">
+                <categorytree tree='tree' current='currentCategory' />
+            </li>
+            <li class="cartColorControl" ng-class="{'active': 'active'}">
+                <a id="451qa_cart_link" ng-show="cartCount && user.CurrentOrderID" class="cart cartPulledRightBackground" href="cart">
+                    <span ng-bind="cartCount" class="badge cartCountControl"></span>
+                    <i class="fa fa-shopping-cart fa-2x fa-flip-horizontal shoppingCartBadge"></i>
+                </a>
+            </li> 
+        </ul>
+    </span>
 </section>
